@@ -1,4 +1,4 @@
-esource "ibm_database" "database" {
+resource "ibm_database" "database" {
   name              = "mq1-test"
   plan              = "standard"
   location          = "us-south"
