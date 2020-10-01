@@ -7,7 +7,7 @@ resource "random_string" "name" {
 }
 
 resource "ibm_database" "database" {
-  name              = "ibm-db-$random_string.result"
+  name              = "ibmdb$random_string.result"
   plan              = "standard"
   location          = "us-south"
   service           = "databases-for-etcd"
