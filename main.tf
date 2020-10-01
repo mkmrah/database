@@ -7,7 +7,7 @@ resource "random_string" "name" {
 }
 
 resource "ibm_database" "database" {
-  name              = "$random_string.name.id"
+  name              = random_string.name.id
   plan              = "standard"
   location          = "us-south"
   service           = "databases-for-etcd"
