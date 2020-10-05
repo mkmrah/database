@@ -1,3 +1,7 @@
+provider "ibm" {
+  region = "eu-de"
+}
+
 resource "random_string" "name" {
   length  = 8
   upper   = false
