@@ -9,6 +9,6 @@ resource "random_string" "name" {
 resource "ibm_database" "database" {
   name              = random_string.name.id
   plan              = "standard"
-  location          = "us-south"
+  location          = "eu-de"
   service           = "databases-for-etcd"
 }
