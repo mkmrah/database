@@ -1,5 +1,5 @@
 provider "ibm" {
-  region = "eu-de"
+  region = "eu-fr2"
 }
 
 resource "random_string" "name" {
@@ -13,6 +13,6 @@ resource "random_string" "name" {
 resource "ibm_database" "database" {
   name              = random_string.name.id
   plan              = "standard"
-  location          = "eu-de"
+  location          = "eu-fr2"
   service           = "databases-for-etcd"
 }
